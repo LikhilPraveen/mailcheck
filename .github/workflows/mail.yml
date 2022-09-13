@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
       - name: Send mail
         if: success()
-        uses: actions/checkout@v
+        uses: actions/checkout@v2
         with:
           # mail server settings
           server_address: smtp.gmail.com
