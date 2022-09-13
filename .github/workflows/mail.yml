@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
       - name: Send mail
         if: always()
-        uses: LikhilPraveen/mailcheck@v1
+        uses: actions/checkout@v3
         with:
           # mail server settings
           server_address: smtp.gmail.com
@@ -45,7 +45,7 @@ jobs:
           # comma-separated string, send email to
           to: chikkipapu@gmail.com
           # from email name
-          from: LkhilPraveen
+          from: LikhilPraveen
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
