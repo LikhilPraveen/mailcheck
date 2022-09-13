@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
         
       - name: Send mail
-        uses: ./
+        uses: LikhilPraveen/mailcheck@v2
         with:
           server_address: smtp.gmail.com
           server_port: 465
