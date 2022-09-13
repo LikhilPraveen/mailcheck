@@ -30,7 +30,7 @@ jobs:
         run: echo Hello, world!
         
       - name: Send mail
-        uses: actions/action-send-mail@v3
+        uses: LikhilPraveen/mailcheck@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
