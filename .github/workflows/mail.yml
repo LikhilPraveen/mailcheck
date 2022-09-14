@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: journalctl -u gitlab-runner
+        run: journalctl -u gitlab-runner >> /var/log/gitlab/gitlab-rails/production_json.log
       - name: Send mail
         if: success()
         uses: actions/checkout@v2
